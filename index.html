@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy New Year</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+#greeting {
+    margin-top: 20%;
+    color: red;
+    font-size: 3em;
+}
+</style>
+</head>
+<body>
+
+<div id="greeting">恭贺新禧！新春快乐！</div>
+
+<script>
+// 获取当前时间并显示个性化问候语句
+const now = new Date();
+document.getElementById('greeting').innerText += `\n愿${now.getFullYear() + 1}带给你幸福安康`;
+</script>
+
+</body>
+</html>
